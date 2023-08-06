@@ -1,0 +1,101 @@
+:root {
+  /*Neutral*/
+  --clr-primary: hsl(216, 69%, 61%);
+  --clr-neutral-500: hsl(0, 0%, 98%);
+  --clr-neutral-600:  hsl(0, 0%, 82%);
+  --clr-neutral-700:  hsl(198, 0%, 8%);
+
+  /*Font*/
+  --ff-primary : 'Plus Jakarta Sans', sans-serif;
+  --ff-body: var(--ff-primary);
+  --ff-accent: var(--ff-primary);
+
+  /*font-weight*/
+  --fw-regular : 500;
+  --fw-bold : 700;
+
+  /*Font-size*/
+  /*Base 16px*/
+  --fs-300 : 0.875rem;/*14*/
+  --fs-400 : 1rem; /*16px*/
+  --fs-500 :1.125rem; /*18px*/
+  --fs-600 : 1.5rem; /*24*/
+  --fs-700 : 2rem;/*32*/
+
+  /*Fonts variables*/
+  --fs-body: var(--fs-400);
+  --fs-primary-heading: var(--fs-700);
+  --fs-text: var(--fs-600);
+  --fs-nav: var(--fs-400);
+
+  /*spacing*/
+  --space-300: 0.875rem ;/*14*/
+  --space-400: 1rem ;/*16*/
+  --space-500: 1.5rem ;/*24*/
+  --space-600: 2rem;/*32*/
+}
+
+body {
+  font-size: var(--fs-body);
+  font-family: var(--ff-primary);
+}
+
+.container {
+  width: 1200px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 800px)  {
+  .container {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+}
+
+@media screen and (min-width: 992px)  {
+  .container {
+    margin-left: 45px;
+    margin-right: 45px;
+
+  }
+}
+
+@media screen and (min-width: 1024px)  {
+  .container {
+    margin: 0 auto;
+    width: 992px;
+  }
+
+
+}
+
+@media (min-width: 75em)  {
+  .container {
+    width: 1024px;
+  }
+}
+
+@media (min-width: 87.5em)  {
+  .container {
+    width: 1200px;
+  }
+}
+
+/* Taille d'écran inférieure ou égale à 64em (1024 pixels) */
+@media (max-width: 64em) {
+  /* Vos styles pour les écrans de 1024 pixels ou moins */
+
+}
+
+/* Taille d'écran inférieure ou égale à 75em (1200 pixels) */
+@media (max-width: 75em) {
+  /* Vos styles pour les écrans de 1200 pixels ou moins */
+}
+
+/* Taille d'écran inférieure ou égale à 87.5em (1400 pixels) */
+@media (max-width: 87.5em) {
+  /* Vos styles pour les écrans de 1400 pixels ou moins */
+}

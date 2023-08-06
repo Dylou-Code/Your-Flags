@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+
+  &__text {
+    font-size: var(--fs-700);
+    color: var(--clr-neutral-700);
+    font-weight: var(--fw-bold);
+  }
+
+  &__icon {
+    width: 40px;
+  }
+}
