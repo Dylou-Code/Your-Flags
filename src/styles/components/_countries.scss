@@ -1,29 +1,39 @@
 .countries {
-
+  margin: 30px 0;
   &__card {
     display: grid;
     grid-template-columns: 1fr;
     gap: 25px;
 
+    &-text {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 10px;
+    }
 
     &-img {
      border-radius: 5px;
+    }
 
+    &-name {
+      font-weight: var(--fw-bold);
+    }
+
+    &-pop {
+      font-weight: var(--fw-regular);
     }
   }
 
   @media (min-width: 768px) {
     &__card {
       display: grid;
-      grid-template-columns:repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 25px;
     }
 
   }
-
-
-
-
 
   @media (min-width: 1024px) {
 
@@ -34,10 +44,7 @@
 
       &-img {
         width: 280px;
-
       }
     }
-
   }
-
 }
