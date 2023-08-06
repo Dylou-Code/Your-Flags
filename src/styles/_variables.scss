@@ -40,12 +40,14 @@ body {
   font-family: var(--ff-primary);
 }
 
-.container {
-  width: 1200px;
-}
 
 .hidden {
   display: none;
+}
+
+.container {
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 @media screen and (min-width: 800px)  {
