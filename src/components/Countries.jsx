@@ -1,17 +1,25 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import Card from "./Card.jsx";
+import CardSkeleton from "./CardSkeleton.jsx";
 
 const Countries = () => {
 
     const [data, setData] = useState([]);
     const [selectedbtn, setSelectedbtn] = useState("");
     const buttonFilter = ["Africa", "America", "Asia", "Europe", "Oceania"];
+    const [isLoading ,setIsLoading] = useState(true)
     const [searchQuery, setSearchQuery] = useState(""); // Nouvel état pour la recherche
+
+
 
     useEffect(() => {
         axios.get("https://restcountries.com/v3.1/all")
-            .then((res) => setData(res.data))
+
+            .then((res) => {
+                setData(res.data)
+                setIsLoading(false)
+            })
     }, [])
 
 
@@ -49,10 +57,11 @@ const Countries = () => {
                                 </button>
                             ))}
                         </div>
-
                 </div>
 
                 <div className="countries__card">
+                    {isLoading && <CardSkeleton cards={12}/>}
+
                     {data
                         .filter((country) => country.continents[0].includes(selectedbtn))
                         .filter((country) => country.name.common.toLowerCase().includes(searchQuery.toLowerCase())) // Filtrer par recherche

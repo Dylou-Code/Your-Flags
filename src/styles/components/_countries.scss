@@ -8,10 +8,6 @@
     flex-direction: column;
     align-items: center;
 
-    &-group {
-
-    }
-
     &-button {
       display: flex;
       flex-wrap: wrap;
@@ -19,6 +15,7 @@
       justify-content: center;
       gap: 15px;
       padding-top: 15px;
+
     }
 
     &-btn {
@@ -26,6 +23,13 @@
       border: none;
       background: #F2F2F2;
       padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    &-btn:hover {
+
+      background: #e8e8e8;
+
     }
 
     &-country {
@@ -56,7 +60,6 @@
       color: var(--clr-neutral-500);
     }
   }
-
 
   &__card {
     display: grid;

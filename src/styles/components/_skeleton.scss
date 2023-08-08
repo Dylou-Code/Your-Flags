@@ -1,0 +1,11 @@
+.skeleton {
+
+  &__card {
+    &-text {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 15px;
+      padding-top: 12px;
+    }
+  }
+}
