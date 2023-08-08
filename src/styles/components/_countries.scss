@@ -1,9 +1,68 @@
 .countries {
   margin: 30px 0;
+
+  &__filter {
+    padding-bottom: 15px;
+    border-bottom: 2px solid #D2D2D2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-group {
+
+    }
+
+    &-button {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding-top: 15px;
+    }
+
+    &-btn {
+      border-radius: 5px;
+      border: none;
+      background: #F2F2F2;
+      padding: 5px 10px;
+    }
+
+    &-country {
+      font-weight: 500;
+    }
+
+    &-search input{
+      padding: 8px 10px;
+      width:100%;
+      outline:none;
+      border: 1px solid #bbb;
+      border-radius:5px;
+      display:inline-block;
+      box-sizing:border-box;
+      -webkit-transition:0.2s ease all;
+      -moz-transition:0.2s ease all;
+      -ms-transition:0.2s ease all;
+      -o-transition:0.2s ease all;
+      transition:0.2s ease all;
+    }
+
+    &-search input[type=search]:focus {
+      border-color:var(--clr-primary);
+    }
+
+    .active {
+      background: var(--clr-primary);
+      color: var(--clr-neutral-500);
+    }
+  }
+
+
   &__card {
     display: grid;
     grid-template-columns: 1fr;
     gap: 25px;
+    margin-top: 20px;
 
     &-text {
       display: flex;
@@ -15,7 +74,6 @@
 
     &-img {
      border-radius: 5px;
-
     }
 
     &-name {
@@ -28,16 +86,28 @@
   }
 
   @media (min-width: 768px) {
+
+    &__filter {
+      padding-bottom: 15px;
+      border-bottom: 2px solid #D2D2D2;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      &-button {
+        padding-top: 0;
+      }
+    }
+
     &__card {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 25px;
     }
-
   }
 
   @media (min-width: 1024px) {
-
     &__card {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
