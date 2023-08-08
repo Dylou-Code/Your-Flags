@@ -1,8 +1,28 @@
 # Your Flags
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site permettant de visualiser différentes informations sur les pays du monde.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Built with
+
+- React
+- Mobile-first workflow
+- API (https://restcountries.com/)
+- Semantic HTML5 markup
+- Sass custom properties
+- Flexbox
+- CSS Grid
+- SCSS (Sass)
+    - Variables
+    - reset
+- Media Queries
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+## Author
+
+- [@Dylou-Code](https://github.com/Dylou-Code)
+
