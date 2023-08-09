@@ -12,7 +12,6 @@ const Countries = () => {
     const [searchQuery, setSearchQuery] = useState(""); // Nouvel état pour la recherche
 
 
-
     useEffect(() => {
         axios.get("https://restcountries.com/v3.1/all")
 
@@ -21,7 +20,6 @@ const Countries = () => {
                 setIsLoading(false)
             })
     }, [])
-
 
     return (
         <div className="container">
