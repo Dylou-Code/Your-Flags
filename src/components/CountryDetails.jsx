@@ -23,7 +23,6 @@ const CountryDetails = () => {
         <div className="container">
             <Navigation/>
               {/* <DetailCard country={countryDetails} />*/}
-            <h2>Test</h2>
             {countryDetails
                 ?.map((country, index) => (
                     <div className="detail" key={index}>
@@ -36,6 +35,10 @@ const CountryDetails = () => {
                         <h3>Hab. : {country.population }</h3>
                         <h3>Continents : {country.continents}</h3>
                         <h3>Region : {country.region}</h3>
+                        <p>conduite : {country.car.side}</p>
+                        <p>Décalage horaire (TimeZone): {country.timezones}</p>
+
+
 
 
                     </div>
