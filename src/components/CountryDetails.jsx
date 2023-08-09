@@ -37,19 +37,13 @@ const CountryDetails = () => {
                         <h3>Region : {country.region}</h3>
                         <p>conduite : {country.car.side}</p>
                         <p>Décalage horaire (TimeZone): {country.timezones}</p>
-
-
-
-
                     </div>
-
                 ))
             }
 
             <Link to={'/'}>
               <button>Retour</button>
             </Link>
-
         </div>
     );
 };

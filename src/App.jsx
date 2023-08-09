@@ -6,8 +6,6 @@ import { SkeletonTheme } from 'react-loading-skeleton';
 import CountryDetails from "./components/CountryDetails.jsx";
 
 function App() {
-
-
   return (
       <SkeletonTheme baseColor="#D2D2D2" highlightColor="#fff">
           <BrowserRouter>

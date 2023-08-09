@@ -7,8 +7,6 @@ const Logo = () => {
           <img className="logo__icon" src="src/assets/icons/flag.svg" alt=""/>
           <span className="logo__text">Flags</span>
       </div>
-
-
   )
 }
 
