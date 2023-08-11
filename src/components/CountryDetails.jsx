@@ -20,30 +20,59 @@ const CountryDetails = () => {
     }, [name]);
 
     return (
+
         <div className="container">
-            <Navigation/>
+            <Navigation />
               {/* <DetailCard country={countryDetails} />*/}
+
             {countryDetails
                 ?.map((country, index) => (
-                    <div className="detail" key={index}>
-                        <img className="countries__card-img" src={country.flags.svg} alt={"drapeau" + country.translations.fra.common}/>
-                        <h3>{country.translations.fra.common }</h3>
-                        <h3>{country.capital }</h3>
-                        {Object.keys(country.languages).map((langCode) => (
-                            <li key={langCode}>{country.languages[langCode]}</li>
-                        ))}
-                        <h3>Hab. : {country.population }</h3>
-                        <h3>Continents : {country.continents}</h3>
-                        <h3>Region : {country.region}</h3>
-                        <p>conduite : {country.car.side}</p>
-                        <p>Décalage horaire (TimeZone): {country.timezones}</p>
-                    </div>
+                        <div className="detail" key={index}>
+                            <div className="detail__left">
+                                <img className="detail-flags" src={country.flags.svg} alt={"drapeau" + country.translations.fra.common}/>
+                            </div>
+                            <div className="detail__right">
+                                <div className="detail__group">
+                                    <img src="" alt=""/>
+                                    <h3>{country.translations.fra.common }</h3>
+                                </div>
+
+                                <div className="detail__group">
+                                    <img src="" alt=""/>
+                                    <h3>{country.capital }</h3>
+                                </div>
+
+                                <div className="detail__group">
+                                    <img src="" alt=""/>
+                                    {Object.keys(country.languages).map((langCode) => (
+                                        <li key={langCode}>{country.languages[langCode]}</li>
+                                    ))}
+                                </div>
+
+                                <div className="detail__group">
+                                    <img src="" alt=""/>
+                                    <h3>Hab. : {country.population }</h3>
+                                </div>
+
+                                <div className="detail__group">
+                                    <img src="" alt=""/>
+                                    <h3>Continents : {country.continents}</h3>
+                                </div>
+
+                                <div className="detail__group">
+                                    <img src="" alt=""/>
+                                    <h3>Region : {country.region}</h3>
+                                </div>
+
+                                <div className="detail__group">
+                                    <img src="" alt=""/>
+                                    <p>conduite : {country.car.side}</p>
+                                </div>
+
+                            </div>
+                        </div>
                 ))
             }
-
-            <Link to={'/'}>
-              <button>Retour</button>
-            </Link>
         </div>
     );
 };

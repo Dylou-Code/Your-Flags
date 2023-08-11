@@ -1,0 +1,20 @@
+ .detail {
+
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 40px;
+
+   &__right {
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 20px;
+     align-items: center;
+   }
+
+   &__group {
+     background-color: #bbbbbb;
+     padding: 20px;
+     border-radius: 5px;
+
+   }
+ }
