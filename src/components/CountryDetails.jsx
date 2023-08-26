@@ -30,15 +30,11 @@ const CountryDetails = () => {
                         <div className="detail" key={index}>
                             <div className="detail__left">
                                 <img className="detail-flags" src={country.flags.svg} alt={"drapeau" + country.translations.fra.common}/>
+                                <h3 className="detail-title">{country.translations.fra.common }</h3>
                             </div>
                             <div className="detail__right">
                                 <div className="detail__group">
-                                    <img src="" alt=""/>
-                                    <h3>{country.translations.fra.common }</h3>
-                                </div>
-
-                                <div className="detail__group">
-                                    <img src="" alt=""/>
+                                    <img className="detail-icon" src="/src/assets/icons/pin.svg" alt=""/>
                                     <h3>{country.capital }</h3>
                                 </div>
 
@@ -50,22 +46,22 @@ const CountryDetails = () => {
                                 </div>
 
                                 <div className="detail__group">
-                                    <img src="" alt=""/>
-                                    <h3>Hab. : {country.population }</h3>
+                                    <img className="detail-icon" src="/src/assets/icons/population.svg" alt=""/>
+                                    <h3>Population : {country.population.toLocaleString() }</h3>
                                 </div>
 
                                 <div className="detail__group">
-                                    <img src="" alt=""/>
+                                    <img className="detail-icon" src="/src/assets/icons/earth.svg" alt=""/>
                                     <h3>Continents : {country.continents}</h3>
                                 </div>
 
                                 <div className="detail__group">
-                                    <img src="" alt=""/>
+                                    <img className="detail-icon" src="/src/assets/icons/map-pin.svg" alt=""/>
                                     <h3>Region : {country.region}</h3>
                                 </div>
 
                                 <div className="detail__group">
-                                    <img src="" alt=""/>
+                                    <img className="detail-icon" width="50" height="50" src="/src/assets/icons/volant.png" alt="steering-wheel"/>
                                     <p>conduite : {country.car.side}</p>
                                 </div>
 
