@@ -2,6 +2,17 @@
 
 Site permettant de visualiser différentes informations sur les pays du monde.
 
+### Launch Project
+
+```
+npm install
+```
+
+```
+npm run dev
+```
+
+
 
 ### Built with
 
