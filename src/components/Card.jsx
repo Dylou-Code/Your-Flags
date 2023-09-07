@@ -10,7 +10,7 @@ const Card = ({country}) => {
 
     return (
         <div className="countries__card-item">
-            <Link to={`/country/${country.name.common}`}>
+            <Link to={`/country/${country.name.common}`} className="countries__card-link">
                 <img className="countries__card-img" src={country.flags.svg || <Skeleton />} alt={"drapeau" + country.translations.fra.common}/>
                 <div className="countries__card-text">
                     <h3 className="countries__card-name">{country.translations.fra.common || <Skeleton />}</h3>

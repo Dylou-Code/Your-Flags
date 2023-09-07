@@ -63,14 +63,8 @@ const Countries = () => {
                     {data
                         .filter((country) => country.continents[0].includes(selectedbtn))
                         .filter((country) => country.name.common.toLowerCase().includes(searchQuery.toLowerCase())) // Filtrer par recherche
-                        /*.filter((country) => country.continents[0].includes(selectedRadio))
-                        .sort((a, b) => b.population - a.population)
-                        .slice(0, rangeValue)*/
                         .map((country,index) =>(
                             <Card key={index} country={country}/>
-                            /*     <div className="countries__card-item">
-                                     <p key={index}>{country.translations.fra.common}</p>
-                                 </div>*/
                         ))}
                 </div>
             </div>
